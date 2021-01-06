@@ -9,6 +9,12 @@ Date: 1/1/2021
 Version: 1.0.0
 """
 
+# Imports
+import arcade
+import pygame
+import tkinter
+import PIL
+
 # Function to provide a tutorial of the game
 def main():
     pass

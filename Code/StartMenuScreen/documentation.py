@@ -10,6 +10,12 @@ Date: 1/1/2021
 Version: 1.0.0
 """
 
+# Imports
+import arcade
+import pygame
+import tkinter
+import PIL
+
 # Function to create the documentation board and list out each of the
 # code blocks
 def main():

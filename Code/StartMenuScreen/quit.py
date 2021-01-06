@@ -9,6 +9,12 @@ Version: 1.0.0
 """
 
 # Imports
+import arcade
+import pygame
+import tkinter
+import PIL
+
+# Imports
 import sys
 
 # Function to quit the application entirely

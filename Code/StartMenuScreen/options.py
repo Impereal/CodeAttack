@@ -9,6 +9,12 @@ Date: 1/1/2021
 Version: 1.0.0
 """
 
+# Imports
+import arcade
+import pygame
+import tkinter
+import PIL
+
 # Function to create a component with all the different
 # options for the starting menu screen
 def main():
