@@ -11,28 +11,34 @@ Version: 1.0.0
 """
 
 # Imports
-import arcade
-import pygame
-import tkinter
-import PIL
+from tkinter import *
+import sys
+import os
+import tkinter as tk
+from options import *
+import options as op
+import header as he
+import quitScreen as qu
 
 # Main function to organize all the other components of the screen
 def main():
-    pass
+    setBackground()
+    displayHeader()
+    displayOptions()
 
 # Function to display the header of the start menu screen, which is
 # created in the file "header.py"
 def displayHeader():
-    pass
+    he.createHeader()
 
 # Function to display the different options of the start menu screen,
 # which is created in the file "options.py"
 def displayOptions():
-    pass
+    op.main()
 
 # Function to be used by other files to return to this screen
 def goBack():
-    pass
+    GoBack = Button(root, text = "← Go Back", bd = "5")
 
 ######################################################
 ### OTHER FUNCTIONS TBD (including setBackground)  ###
@@ -40,4 +46,7 @@ def goBack():
 
 # Function to set the background of the start menu screen
 def setBackground():
-    pass
+    op.root.configure(bg="#3776ab")
+
+main()
+

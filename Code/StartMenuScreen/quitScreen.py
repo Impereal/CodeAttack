@@ -8,15 +8,15 @@ Date: 1/1/2021
 Version: 1.0.0
 """
 
-# Imports
-import arcade
-import pygame
-import tkinter
-import PIL
 
 # Imports
 import sys
 
+
+
 # Function to quit the application entirely
 def quitScreen():
-    sys.exit(0)
+    pass
+    #when I use this function the quit button doesn't show up
+    #sys.exit()
+
