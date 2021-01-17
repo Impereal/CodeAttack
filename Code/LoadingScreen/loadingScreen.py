@@ -12,6 +12,10 @@ Version: 1.0.0
 # Imports
 from tkinter import *
 from PIL import ImageTk,Image
+import os
+import sys
+from time import time
+
 
 
 # Function to display the initial loading screen of the application
@@ -36,12 +40,15 @@ def displayLoadingScreen():
 
     #displaying the image
     global img
+    #trying to get image path to work from git
     img = ImageTk.PhotoImage(Image.open(r"C:\Users\Kids.DESKTOP-2OS06UD\Desktop\Python for TSA\GitHub\CodeAttack\CodeAttack\Resources\Images\TSALogoTransparent.png"))
     canvas.create_image(width/2,height/2, image=img)
-    mainloop()
+    root.after(50000, root.destroy)
+
 
 #Run function
 displayLoadingScreen()
+execfile(r"C:\Users\Kids.DESKTOP-2OS06UD\Desktop\Python for TSA\GitHub\CodeAttack\CodeAttack\Code\StartMenuScreen\startMenuScreen.py")
 
 
 

@@ -28,17 +28,17 @@ def playlink():
      os.system("python gamePlayScreen.py")
 def playOption():
     Play = Button(root, text = "Play", bd = "2", width = "20", command = playlink())
-    Play.configure(font=('ariel', 12, 'bold'),foreground='black')
+    Play.configure(font=('Century gothic', 12),foreground='black')
     Play.place(x = centerWidth/2.35, y = centerHeight/2.5)
 
 
 # Function to create the lessons and documentation option,
 # opening the lessons board when clicked
 def lessonslink():
-     os.system("python lessons.py")
+     os.system("lessons.py")
 def lessonsOption():
     Lessons = Button(root, text = "Lessons & Documents", bd = "2", width= "20", command= lessonslink())
-    Lessons.configure(font=('ariel', 12, 'bold'),foreground='black')
+    Lessons.configure(font=('Century gothic', 12),foreground='black')
     Lessons.place(x = centerWidth/2.35, y = (centerHeight/2.5)+40)
     
 
@@ -48,7 +48,7 @@ def settingslink():
     os.system("python settings.py")
 def settingsOption():
     Settings = Button(root, text = "Settings", bd = "2", width ="20", command = settingslink())
-    Settings.configure(font=('ariel', 12, 'bold'),foreground='black')
+    Settings.configure(font=('Century gothic', 12),foreground='black')
     Settings.place(x = centerWidth/2.35, y = (centerHeight/2.5)+80)
 
 # Function to create the quit option, closing the program when
@@ -57,7 +57,7 @@ def quitlink():
     os.system("python quit.py")
 def quitOption():
     Quit = Button(root, text = "Quit", bd = "2", width = "20", command = root.destroy)
-    Quit.configure(font=('ariel', 12, 'bold'),foreground ='black')
+    Quit.configure(font=('Century gothic', 12),foreground ='black')
     Quit.place(x = centerWidth/2.35, y = (centerHeight/2.5)+120)
 
 # Function to create a component with all the different
