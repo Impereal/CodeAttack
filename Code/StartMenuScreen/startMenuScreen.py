@@ -10,19 +10,15 @@ Date: 1/1/2021
 Version: 1.0.0
 """
 
-# Imports
+# Library Imports
 from tkinter import *
-import sys
-import os
-import tkinter as tk
-from options import *
-import options as op
-import header as he
-import quitScreen as qu
+
+# Project Imports
+from . import options as op
+from . import header as he
 
 # Main function to organize all the other components of the screen
 def main():
-    setBackground()
     displayHeader()
     displayOptions()
 
@@ -38,15 +34,4 @@ def displayOptions():
 
 # Function to be used by other files to return to this screen
 def goBack():
-    GoBack = Button(root, text = "← Go Back", bd = "5")
-
-######################################################
-### OTHER FUNCTIONS TBD (including setBackground)  ###
-######################################################
-
-# Function to set the background of the start menu screen
-def setBackground():
-    op.root.configure(bg="#3776ab")
-
-main()
-
+    GoBack = Button(op.opRoot, text = "← Go Back", bd = "5")

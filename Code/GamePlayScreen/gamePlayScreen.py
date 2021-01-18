@@ -10,10 +10,7 @@ Version: 1.0.0
 """
 
 # Imports
-import arcade
-import pygame
-import tkinter
-import PIL
+from tkinter import *
 
 # Function to take the player through the entire game
 def main():
