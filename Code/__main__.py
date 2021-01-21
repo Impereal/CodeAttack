@@ -1,3 +1,4 @@
+# Imports
 from .LoadingScreen import loadingScreen
 
 # Main function
